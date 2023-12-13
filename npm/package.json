@@ -1,0 +1,22 @@
+{
+  "name": "wgl-css",
+  "version": "1.0.2",
+  "description": "",
+  "files": [
+    "*"
+  ],
+  "homepage": "https://wangguanl.github.io/page__package-css/",
+  "author": {
+    "name": "Mr.Wang",
+    "email": "17600980516@163.com",
+    "url": "https://github.com/wangguanl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangguanl/package__css"
+  },
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}

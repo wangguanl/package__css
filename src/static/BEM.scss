@@ -6,16 +6,14 @@ $modifierSeparator: '--';
 
   @if str-index($selector, $modifierSeparator) {
     @return true;
-  }
-
-  @else {
+  } @else {
     @return false;
   }
 }
 
 @function selectorToString($selector) {
-  $selector: inspect($selector); //cast to string 
-  $selector: str-slice($selector, 2, -2); //remove brackets 
+  $selector: inspect($selector); //cast to string
+  $selector: str-slice($selector, 2, -2); //remove brackets
   @return $selector;
 }
 
@@ -39,16 +37,14 @@ $modifierSeparator: '--';
 
     @at-root {
       #{$selector} {
-        #{$block+$elementSeparator+$element} {
+        #{$block + $elementSeparator + $element} {
           @content;
         }
       }
     }
-  }
-
-  @else {
+  } @else {
     @at-root {
-      #{$selector+$elementSeparator+$element} {
+      #{$selector + $elementSeparator + $element} {
         @content;
       }
     }
@@ -57,7 +53,7 @@ $modifierSeparator: '--';
 
 @mixin M($modifier) {
   @at-root {
-    #{&}#{$modifierSeparator+$modifier} {
+    #{&}#{$modifierSeparator + $modifier} {
       @content;
     }
   }

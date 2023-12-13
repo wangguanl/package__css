@@ -1,34 +1,26 @@
 {
-	"name": "wgl-css",
-	"version": "1.0.0",
-  "files": [
-    "dist"
-  ],
-	"scripts": {
-		"build": "gulp"
-	},
-	"devDependencies": {
-		"autoprefixer": "^10.4.14",
-		"gulp": "^4.0.2",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-cli": "^2.3.0",
-		"gulp-dart-sass": "^1.0.2",
-		"gulp-postcss": "^9.0.1",
-		"gulp-rename": "^2.0.0",
-		"postcss": "^8.4.21"
-	},
-  "homepage": "https://github.com/wangguanl/page__package-css",
-  "author": {
-    "name": "Mr.Wang",
-    "email": "17600980516@163.com",
-    "url": "https://github.com/wangguanl"
+  "name": "wgl-css",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "gulp",
+    "deploy": "cd docs && deploy.sh",
+    "docs": "cd docs && npm run dev",
+    "pub": "npm run build && cd dist && npm publish",
+    "pub:patch": "cd npm && npm version patch && cd ../ && npm run pub",
+    "pub:minor": "cd npm && npm version minor && cd ../ && npm run pub",
+    "pub:major": "cd npm && npm version major && cd ../ && npm run pub"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wangguanl/package__css"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.4.32"
   },
-  "license": "ISC",
-  "publishConfig": {
-    "access": "public"
-  }
+  "license": "ISC"
 }

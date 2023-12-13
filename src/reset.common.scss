@@ -25,18 +25,17 @@ td {
   margin: 0;
   padding: 0;
 }
-
-html, body {
+html,
+body {
   height: 100vh;
   width: 100vw;
 }
-
 body {
-  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif;
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC,
+    Hiragino Sans GB, Arial, sans-serif;
   font-size: 12px;
   line-height: 1;
   color: #333;
-  background: #fff;
   position: relative;
   /*字体抗锯齿渲染*/
   -moz-osx-font-smoothing: grayscale;
@@ -89,25 +88,21 @@ button {
   vertical-align: middle;
 }
 
-input[type="button"],
-button {
-  cursor: pointer;
-}
-
 input,
 button {
   border: none;
   outline: none;
+  line-height: normal;
 }
-
 
 textarea {
   font-family: inherit !important;
   font-size: 12px !important;
   font-style: inherit !important;
   font-weight: inherit !important;
-  /* resize: none !important; */
+  resize: none !important;
   outline: none;
+  vertical-align: top;
 }
 
 iframe {
@@ -122,21 +117,20 @@ table {
 }
 
 pre {
-  font-family: "Courier New", Courier, monospace;
-}
-
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type="number"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999;
+}
+
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+// 修改浏览器自动填充密码默认样式
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset !important;
 }
