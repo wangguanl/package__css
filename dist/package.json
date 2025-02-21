@@ -1,9 +1,14 @@
 {
   "name": "wgl-css",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "",
+  "main": "reset.css",
+  "style": "reset.css",
   "files": [
-    "*"
+    "BEM.scss",
+    "mixin.scss",
+    "reset.css",
+    "reset.m.css"
   ],
   "homepage": "https://wangguanl.github.io/page__package-css/",
   "author": {

@@ -13,7 +13,7 @@ module.exports = (src, dist) =>
     .pipe(cleanCSS()) // 压缩
     .pipe(
       rename({
-        extname: ".min.css",
+        extname: ".css",
       })
     )
     .pipe(gulp.dest(dist));
